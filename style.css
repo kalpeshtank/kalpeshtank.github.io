@@ -1,4 +1,4 @@
-/* === Base === */
+/* === Base Styles === */
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -14,10 +14,78 @@ body {
   transition: none !important;
 }
 
+/* === Floating Navigation === */
+#floating-nav {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(20, 20, 20, 0.75);
+  backdrop-filter: blur(10px);
+  border-radius: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  z-index: 10000;
+  padding: 8px 22px;
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards 0.8s;
+}
+
+#floating-nav ul {
+  display: flex;
+  gap: 1.2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#floating-nav a {
+  color: #f5f5f5;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 0.9rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+#floating-nav a:hover {
+  color: #ffd740;
+}
+
+#floating-nav a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ffd740;
+}
+
+body.light #floating-nav {
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+body.light #floating-nav a {
+  color: #111;
+}
+
+body.light #floating-nav a.active::after {
+  background: #0288d1;
+}
+
+@media (max-width: 768px) {
+  #floating-nav {
+    display: none;
+  }
+}
+
 /* === Hero Section === */
 .hero {
   text-align: center;
-  padding: 5rem 1rem 3rem;
+  padding: 6rem 1rem 3rem;
   background: linear-gradient(135deg, #00bcd4, #673ab7);
   color: white;
   position: relative;
@@ -52,7 +120,7 @@ body {
 
   0%,
   100% {
-    transform: translateY(0px);
+    transform: translateY(0);
   }
 
   50% {
@@ -67,13 +135,12 @@ body {
   animation: fadeIn 1.5s ease;
 }
 
-/* === Social Links === */
+/* === Links === */
 .links {
   display: flex;
   justify-content: center;
   gap: 1.2rem;
   margin-bottom: 1.5rem;
-  animation: fadeInUp 1.5s ease;
 }
 
 .links a {
@@ -84,7 +151,7 @@ body {
 
 .links a:hover {
   color: #ffd740;
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.2);
 }
 
 /* === Resume Button === */
@@ -100,7 +167,6 @@ body {
   text-decoration: none;
   font-size: 0.95rem;
   transition: all 0.3s ease, box-shadow 0.3s ease;
-  animation: fadeInUp 1.8s ease;
 }
 
 .resume-btn:hover {
@@ -157,7 +223,7 @@ h2::after {
   transform: translateY(-3px) scale(1.05);
 }
 
-/* === Timeline / Experience === */
+/* === Timeline === */
 .timeline .job {
   margin-bottom: 2rem;
   transition: transform 0.3s ease;
@@ -172,7 +238,7 @@ h2::after {
   margin: 0.4rem 0;
 }
 
-/* === Education Cards === */
+/* === Education === */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -248,17 +314,13 @@ body.light .badges span:hover {
 }
 
 body.light .card {
-  background: #ffffff;
+  background: #fff;
   color: #222;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 body.light .card h3 {
   color: #0288d1;
-}
-
-body.light .card p {
-  color: #333;
 }
 
 body.light footer {
@@ -294,8 +356,9 @@ body.light footer {
 .fade-in,
 .slide-up {
   opacity: 0;
-  transform: translateY(30px);
-  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  will-change: opacity, transform;
 }
 
 .visible {
@@ -303,7 +366,7 @@ body.light footer {
   transform: translateY(0);
 }
 
-/* === Keyframe Animations === */
+/* === Keyframes === */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -323,6 +386,68 @@ body.light footer {
 
   to {
     opacity: 1;
+  }
+}
+
+/* === Scroll Progress Bar === */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  background: linear-gradient(90deg, #00bcd4, #ffd740);
+  z-index: 9999;
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.6);
+  transition: width 0.2s ease-out;
+}
+
+body.light #scroll-progress {
+  background: linear-gradient(90deg, #03a9f4, #ff9800);
+}
+
+/* === Back to Top Button === */
+#back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: linear-gradient(135deg, #00bcd4, #673ab7);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(0, 188, 212, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+  z-index: 9999;
+}
+
+#back-to-top:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(103, 58, 183, 0.6);
+}
+
+#back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    box-shadow: 0 4px 20px rgba(0, 188, 212, 0.3);
+  }
+
+  50% {
+    box-shadow: 0 6px 30px rgba(0, 188, 212, 0.5);
   }
 }
 
@@ -372,79 +497,5 @@ body.light footer {
   footer {
     font-size: 0.8rem;
     padding: 1.5rem 1rem;
-  }
-}
-
-/* === Scroll Progress Bar === */
-#scroll-progress {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 0%;
-  height: 4px;
-  background: linear-gradient(90deg, #00bcd4, #ffd740);
-  z-index: 9999;
-  box-shadow: 0 0 10px rgba(0, 188, 212, 0.6);
-  transition: width 0.2s ease-out;
-}
-
-/* Light mode bar */
-body.light #scroll-progress {
-  background: linear-gradient(90deg, #03a9f4, #ff9800);
-  box-shadow: 0 0 8px rgba(3, 169, 244, 0.6);
-}
-
-/* === Back to Top Button === */
-#back-to-top {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background: linear-gradient(135deg, #00bcd4, #673ab7);
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  box-shadow: 0 4px 20px rgba(0, 188, 212, 0.3);
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.4s ease;
-  z-index: 9999;
-}
-
-#back-to-top:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 25px rgba(103, 58, 183, 0.6);
-}
-
-/* visible state */
-#back-to-top.show {
-  opacity: 1;
-  visibility: visible;
-}
-
-/* light mode */
-body.light #back-to-top {
-  background: linear-gradient(135deg, #03a9f4, #0288d1);
-  box-shadow: 0 4px 15px rgba(3, 169, 244, 0.4);
-}
-
-#back-to-top.show {
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-
-  0%,
-  100% {
-    box-shadow: 0 4px 20px rgba(0, 188, 212, 0.3);
-  }
-
-  50% {
-    box-shadow: 0 6px 30px rgba(0, 188, 212, 0.5);
   }
 }
