@@ -91,3 +91,37 @@ footer {
   font-size: 0.9rem;
   color: #aaa;
 }
+
+/* Theme toggle button */
+#theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+/* Light mode styles */
+body.light {
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+body.light .hero {
+  background: linear-gradient(135deg, #00bcd4, #03a9f4);
+  color: #fff;
+}
+
+body.light .badges span {
+  background: #fff;
+  color: #00796b;
+  border: 1px solid #00796b;
+}
+
+body.light footer {
+  background: #e0e0e0;
+  color: #333;
+}
