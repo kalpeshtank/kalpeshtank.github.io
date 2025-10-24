@@ -374,3 +374,77 @@ body.light footer {
     padding: 1.5rem 1rem;
   }
 }
+
+/* === Scroll Progress Bar === */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  background: linear-gradient(90deg, #00bcd4, #ffd740);
+  z-index: 9999;
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.6);
+  transition: width 0.2s ease-out;
+}
+
+/* Light mode bar */
+body.light #scroll-progress {
+  background: linear-gradient(90deg, #03a9f4, #ff9800);
+  box-shadow: 0 0 8px rgba(3, 169, 244, 0.6);
+}
+
+/* === Back to Top Button === */
+#back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: linear-gradient(135deg, #00bcd4, #673ab7);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(0, 188, 212, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+  z-index: 9999;
+}
+
+#back-to-top:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(103, 58, 183, 0.6);
+}
+
+/* visible state */
+#back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* light mode */
+body.light #back-to-top {
+  background: linear-gradient(135deg, #03a9f4, #0288d1);
+  box-shadow: 0 4px 15px rgba(3, 169, 244, 0.4);
+}
+
+#back-to-top.show {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    box-shadow: 0 4px 20px rgba(0, 188, 212, 0.3);
+  }
+
+  50% {
+    box-shadow: 0 6px 30px rgba(0, 188, 212, 0.5);
+  }
+}

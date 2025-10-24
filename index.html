@@ -86,7 +86,7 @@
         </a>
       </div>
     </header>
-
+    <div id="scroll-progress"></div>
     <main>
       <!-- About -->
       <section id="about" class="fade-up">
@@ -298,6 +298,34 @@
             el.classList.add("visible");
           });
       });
+      // === Scroll Progress Bar ===
+      window.addEventListener("scroll", () => {
+        const scrollTop =
+          document.documentElement.scrollTop || document.body.scrollTop;
+        const scrollHeight =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+        const progress = (scrollTop / scrollHeight) * 100;
+        document.getElementById("scroll-progress").style.width = progress + "%";
+      });
+
+      // === Back to Top Button ===
+      const backToTop = document.getElementById("back-to-top");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 400) {
+          backToTop.classList.add("show");
+        } else {
+          backToTop.classList.remove("show");
+        }
+      });
+
+      backToTop.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
     </script>
+    <button id="back-to-top" aria-label="Back to top">
+      <i data-feather="arrow-up"></i>
+    </button>
   </body>
 </html>
