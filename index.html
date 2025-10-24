@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kalpesh Tank | Senior Frontend Developer | Frontend Team Lead</title>
+
     <!-- ✅ SEO Meta Tags -->
     <meta
       name="description"
@@ -14,7 +15,6 @@
       content="Kalpesh Tank, Frontend Developer, Angular Developer, Ahmedabad, India, NodeJS, AWS, Web Developer, UI UX, Frontend Team Lead"
     />
     <meta name="author" content="Kalpesh Tank" />
-    <!-- ✅ Open Graph (for LinkedIn, WhatsApp previews) -->
     <meta
       property="og:title"
       content="Kalpesh Tank | Senior Frontend Developer"
@@ -30,14 +30,13 @@
     <meta property="og:url" content="https://kalpeshtank.github.io" />
     <meta name="twitter:card" content="summary_large_image" />
 
-    <!-- ✅ Favicon -->
     <link rel="icon" href="assets/profile.jpeg" type="image/jpeg" />
-    
-    <!-- ✅ Font Awesome (Public CDN, no 403 error) -->
+
+    <!-- ✅ Font Awesome (latest stable public CDN) -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      integrity="sha512-1ycn6Ica9999RybG7+4O3Gz5JZyWzNsO4YPpQJbKJg+nC3TmlfMGKfztEytxD4lQ+j0LC+Q6u1L1+v+bnz6Qlg=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-+U5zB8w6bQwCK4V4O5ElpGsnIWeF3y9mvuFwnsWAwOcvPHS9jMz4A0Hz3u2P8guTxK6sCe+t0E/07/FWGVZJIg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -52,7 +51,12 @@
 
   <body>
     <header class="hero">
-      <button id="theme-toggle" title="Toggle Dark/Light Mode">
+      <!-- ✅ Theme toggle button -->
+      <button
+        id="theme-toggle"
+        class="theme-toggle"
+        title="Toggle Dark/Light Mode"
+      >
         <i class="fa-solid fa-moon"></i>
       </button>
 
@@ -66,17 +70,19 @@
 
         <!-- ✅ Social + Resume Buttons -->
         <div class="links">
-          <a href="mailto:k.p.tank.143@gmail.com"
+          <a href="mailto:k.p.tank.143@gmail.com" aria-label="Email"
             ><i class="fa-solid fa-envelope"></i
           ></a>
           <a
             href="https://www.linkedin.com/in/kalpesh-tank-133654125/"
             target="_blank"
+            aria-label="LinkedIn"
             ><i class="fa-brands fa-linkedin"></i
           ></a>
           <a
             href="https://bold.pro/my/kalpesh-tank-240928174537/493r"
             target="_blank"
+            aria-label="Portfolio"
             ><i class="fa-solid fa-globe"></i
           ></a>
           <a href="assets/Kalpesh_Tank_Resume.pdf" download class="resume-btn">
@@ -127,7 +133,6 @@
 
       <section id="experience">
         <h2>Experience</h2>
-
         <div class="timeline">
           <div class="job">
             <h3>Senior Angular Developer — Pingtree</h3>
@@ -281,23 +286,27 @@
       <p>© 2025 Kalpesh Tank | Built with ❤️ using GitHub Pages</p>
     </footer>
 
+    <!-- ✅ Theme toggle script -->
     <script>
       const toggleButton = document.getElementById("theme-toggle");
       const body = document.body;
+      const icon = toggleButton.querySelector("i");
 
+      // Set initial state
       if (localStorage.getItem("theme") === "light") {
         body.classList.add("light");
+        icon.classList.replace("fa-moon", "fa-sun");
       }
 
+      // Toggle theme
       toggleButton.addEventListener("click", () => {
         body.classList.toggle("light");
-        localStorage.setItem(
-          "theme",
-          body.classList.contains("light") ? "light" : "dark"
+        const isLight = body.classList.contains("light");
+        localStorage.setItem("theme", isLight ? "light" : "dark");
+        icon.classList.replace(
+          isLight ? "fa-moon" : "fa-sun",
+          isLight ? "fa-sun" : "fa-moon"
         );
-        toggleButton.innerHTML = body.classList.contains("light")
-          ? '<i class="fa-solid fa-sun"></i>'
-          : '<i class="fa-solid fa-moon"></i>';
       });
     </script>
   </body>
