@@ -6,14 +6,15 @@ body {
   color: #f5f5f5;
   line-height: 1.7;
   overflow-x: hidden;
-  transition: background 0.4s, color 0.4s;
+  transition: background 0.4s ease, color 0.4s ease;
+  scroll-behavior: smooth;
 }
 
 .preload * {
   transition: none !important;
 }
 
-/* === Hero === */
+/* === Hero Section === */
 .hero {
   text-align: center;
   padding: 5rem 1rem 3rem;
@@ -21,6 +22,19 @@ body {
   color: white;
   position: relative;
   overflow: hidden;
+  animation: heroFadeIn 1.2s ease forwards;
+}
+
+@keyframes heroFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .profile-pic {
@@ -30,7 +44,7 @@ body {
   border: 4px solid #fff;
   margin-bottom: 1rem;
   object-fit: cover;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.25);
   animation: float 6s ease-in-out infinite;
 }
 
@@ -50,25 +64,27 @@ body {
   font-size: 1.1rem;
   opacity: 0.95;
   margin-bottom: 1.5rem;
+  animation: fadeIn 1.5s ease;
 }
 
-/* === Links === */
+/* === Social Links === */
 .links {
   display: flex;
   justify-content: center;
   gap: 1.2rem;
   margin-bottom: 1.5rem;
+  animation: fadeInUp 1.5s ease;
 }
 
 .links a {
   color: white;
   font-size: 1.4rem;
-  transition: transform 0.3s, color 0.3s;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .links a:hover {
   color: #ffd740;
-  transform: scale(1.2);
+  transform: scale(1.2) rotate(5deg);
 }
 
 /* === Resume Button === */
@@ -76,19 +92,20 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 12px 24px;
-  border-radius: 40px;
+  padding: 10px 22px;
+  border-radius: 30px;
   background: linear-gradient(135deg, #ffd740, #ffb300);
   color: #111;
   font-weight: 600;
   text-decoration: none;
-  font-size: 1rem;
-  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  transition: all 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 1.8s ease;
 }
 
 .resume-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(255, 215, 64, 0.4);
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 6px 20px rgba(255, 215, 64, 0.5);
 }
 
 /* === Sections === */
@@ -103,8 +120,21 @@ h2 {
   padding-bottom: 0.4rem;
   margin-top: 3rem;
   font-size: 1.6rem;
+  position: relative;
 }
 
+h2::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: #ffd740;
+  border-radius: 2px;
+}
+
+/* === Skills === */
 .badges {
   display: flex;
   flex-wrap: wrap;
@@ -118,16 +148,23 @@ h2 {
   padding: 6px 12px;
   border-radius: 20px;
   font-size: 0.9rem;
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 
 .badges span:hover {
   background: #00bcd4;
   color: #111;
+  transform: translateY(-3px) scale(1.05);
 }
 
+/* === Timeline / Experience === */
 .timeline .job {
   margin-bottom: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.timeline .job:hover {
+  transform: translateX(5px);
 }
 
 .timeline h3 {
@@ -135,22 +172,42 @@ h2 {
   margin: 0.4rem 0;
 }
 
+/* === Education Cards === */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1rem;
-  margin-top: 1rem;
+  gap: 1.2rem;
+  margin-top: 1.2rem;
 }
 
 .card {
   background: #1a1a1a;
-  padding: 1rem;
+  padding: 1.2rem 1rem;
   border-radius: 12px;
-  transition: transform 0.3s;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.4s ease;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.card.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 188, 212, 0.25);
+}
+
+.card h3 {
+  color: #ffd740;
+  font-size: 1.05rem;
+}
+
+.card p {
+  margin: 0.4rem 0 0;
+  color: #ccc;
 }
 
 /* === Footer === */
@@ -160,6 +217,53 @@ footer {
   background: #0a0a0a;
   color: #aaa;
   font-size: 0.9rem;
+  transition: background 0.4s ease, color 0.4s ease;
+  animation: fadeIn 1.5s ease;
+}
+
+/* === Light Mode === */
+body.light {
+  background: #f9f9f9;
+  color: #111;
+}
+
+body.light .hero {
+  background: linear-gradient(135deg, #03a9f4, #00bcd4);
+}
+
+body.light .resume-btn {
+  background: linear-gradient(135deg, #03a9f4, #0288d1);
+  color: #fff;
+}
+
+body.light .badges span {
+  background: #e0f7fa;
+  color: #00796b;
+  border: 1px solid #b2ebf2;
+}
+
+body.light .badges span:hover {
+  background: #00bcd4;
+  color: #fff;
+}
+
+body.light .card {
+  background: #ffffff;
+  color: #222;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.light .card h3 {
+  color: #0288d1;
+}
+
+body.light .card p {
+  color: #333;
+}
+
+body.light footer {
+  background: #e6e6e6;
+  color: #333;
 }
 
 /* === Theme Toggle === */
@@ -185,33 +289,41 @@ footer {
   transform: rotate(20deg);
 }
 
-/* === Light Theme === */
-body.light {
-  background: #f9f9f9;
-  color: #111;
-}
-
-body.light .hero {
-  background: linear-gradient(135deg, #03a9f4, #00bcd4);
-}
-
-body.light .resume-btn {
-  background: linear-gradient(135deg, #03a9f4, #0288d1);
-  color: #fff;
-}
-
 /* === Scroll Animations === */
 .fade-up,
 .fade-in,
 .slide-up {
   opacity: 0;
   transform: translateY(30px);
-  transition: all 0.8s ease-out;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* === Keyframe Animations === */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* === Responsive === */
@@ -230,8 +342,13 @@ body.light .resume-btn {
   }
 
   .resume-btn {
-    font-size: 0.9rem;
-    padding: 10px 18px;
+    font-size: 0.85rem;
+    padding: 8px 16px;
+  }
+
+  .badges span {
+    font-size: 0.85rem;
+    padding: 5px 10px;
   }
 }
 
@@ -239,6 +356,9 @@ body.light .resume-btn {
   .resume-btn {
     width: 100%;
     justify-content: center;
+    font-size: 0.85rem;
+    padding: 8px 12px;
+    border-radius: 25px;
   }
 
   h1 {
@@ -247,5 +367,10 @@ body.light .resume-btn {
 
   h2 {
     font-size: 1.3rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 1.5rem 1rem;
   }
 }

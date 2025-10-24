@@ -276,21 +276,28 @@
         feather.replace();
       });
 
-      // Fade-in animations on scroll
+      // Scroll reveal animations
       const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((e) => {
             if (e.isIntersecting) e.target.classList.add("visible");
           });
         },
-        { threshold: 0.15 }
+        { threshold: 0.2 }
       );
       document
-        .querySelectorAll(".fade-up, .fade-in, .slide-up")
+        .querySelectorAll(".fade-up, .fade-in, .slide-up, .card")
         .forEach((el) => observer.observe(el));
 
-      // Preload fade effect
-      window.addEventListener("load", () => body.classList.remove("preload"));
+      // Page load smooth intro
+      window.addEventListener("load", () => {
+        body.classList.remove("preload");
+        document
+          .querySelectorAll(".hero, .subtitle, .links, .resume-btn")
+          .forEach((el) => {
+            el.classList.add("visible");
+          });
+      });
     </script>
   </body>
 </html>
