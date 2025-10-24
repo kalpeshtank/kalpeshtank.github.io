@@ -292,73 +292,88 @@
     </button>
 
     <!-- ✅ Scripts -->
+    <!-- ✅ Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- ✅ Scripts -->
     <script>
-      feather.replace();
+      document.addEventListener("DOMContentLoaded", () => {
+        // === Theme Toggle ===
+        const toggleButton = document.getElementById("theme-toggle");
+        const body = document.body;
 
-      const toggleButton = document.getElementById("theme-toggle");
-      const icon = toggleButton.querySelector("i");
-      const body = document.body;
-
-      if (localStorage.getItem("theme") === "light") {
-        body.classList.add("light");
-        icon.setAttribute("data-feather", "sun");
+        // Initialize icon
+        toggleButton.innerHTML = `<i data-feather="moon"></i>`;
         feather.replace();
-      }
 
-      toggleButton.addEventListener("click", () => {
-        body.classList.toggle("light");
-        const isLight = body.classList.contains("light");
-        localStorage.setItem("theme", isLight ? "light" : "dark");
-        icon.setAttribute("data-feather", isLight ? "sun" : "moon");
-        feather.replace();
-      });
+        // Set initial theme
+        if (localStorage.getItem("theme") === "light") {
+          body.classList.add("light");
+          toggleButton.innerHTML = `<i data-feather="sun"></i>`;
+          feather.replace();
+        }
 
-      // Reveal Animations
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach(
-            (e) => e.isIntersecting && e.target.classList.add("visible")
-          );
-        },
-        { threshold: 0.2 }
-      );
-      document
-        .querySelectorAll("section, .card")
-        .forEach((el) => observer.observe(el));
-
-      // Scroll Progress
-      window.addEventListener("scroll", () => {
-        const progress =
-          (window.scrollY / (document.body.scrollHeight - window.innerHeight)) *
-          100;
-        document.getElementById("scroll-progress").style.width = progress + "%";
-      });
-
-      // Back to Top Button
-      const backToTop = document.getElementById("back-to-top");
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 400) backToTop.classList.add("show");
-        else backToTop.classList.remove("show");
-      });
-      backToTop.addEventListener("click", () =>
-        window.scrollTo({ top: 0, behavior: "smooth" })
-      );
-
-      // Floating Nav Active Section
-      const navLinks = document.querySelectorAll("#floating-nav a");
-      const sections = document.querySelectorAll("main section");
-
-      window.addEventListener("scroll", () => {
-        let current = "";
-        sections.forEach((section) => {
-          const sectionTop = section.offsetTop - 150;
-          if (window.scrollY >= sectionTop)
-            current = section.getAttribute("id");
+        // Toggle theme on click
+        toggleButton.addEventListener("click", () => {
+          const isLight = body.classList.toggle("light");
+          localStorage.setItem("theme", isLight ? "light" : "dark");
+          toggleButton.innerHTML = isLight
+            ? `<i data-feather="sun"></i>`
+            : `<i data-feather="moon"></i>`;
+          feather.replace();
         });
-        navLinks.forEach((link) => {
-          link.classList.remove("active");
-          if (link.getAttribute("href").includes(current))
-            link.classList.add("active");
+
+        // === Reveal Animations ===
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((e) => {
+              if (e.isIntersecting) e.target.classList.add("visible");
+            });
+          },
+          { threshold: 0.2 }
+        );
+        document
+          .querySelectorAll("section, .card")
+          .forEach((el) => observer.observe(el));
+
+        // === Scroll Progress ===
+        window.addEventListener("scroll", () => {
+          const progress =
+            (window.scrollY /
+              (document.body.scrollHeight - window.innerHeight)) *
+            100;
+          const bar = document.getElementById("scroll-progress");
+          if (bar) bar.style.width = progress + "%";
+        });
+
+        // === Back to Top Button ===
+        const backToTop = document.getElementById("back-to-top");
+        window.addEventListener("scroll", () => {
+          if (window.scrollY > 400) backToTop.classList.add("show");
+          else backToTop.classList.remove("show");
+        });
+        if (backToTop)
+          backToTop.addEventListener("click", () =>
+            window.scrollTo({ top: 0, behavior: "smooth" })
+          );
+
+        // === Floating Nav Active Section Highlight ===
+        const navLinks = document.querySelectorAll("#floating-nav a");
+        const sections = document.querySelectorAll("main section");
+
+        window.addEventListener("scroll", () => {
+          let current = "";
+          sections.forEach((section) => {
+            const sectionTop = section.offsetTop - 150;
+            if (window.scrollY >= sectionTop)
+              current = section.getAttribute("id");
+          });
+
+          navLinks.forEach((link) => {
+            link.classList.remove("active");
+            if (link.getAttribute("href").includes(current))
+              link.classList.add("active");
+          });
         });
       });
     </script>
