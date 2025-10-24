@@ -1,1 +1,5 @@
-theme: jekyll-theme-dinky
+title: "Kalpesh Tank"
+description: "Senior Frontend Developer | Angular | NODE | AWS"
+theme: jekyll-theme-cayman
+show_downloads: true
+google_analytics:
