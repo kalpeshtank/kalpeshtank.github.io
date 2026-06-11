@@ -3,374 +3,246 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kalpesh Tank | Senior Frontend Developer | Team Lead</title>
-
-    <!-- ✅ SEO Meta Tags -->
+    <title>Kalpesh Tank | Frontend Engineering Lead</title>
     <meta
       name="description"
-      content="Kalpesh Tank — Senior Frontend Developer & Frontend Team Lead with 8+ years of experience in Angular, NodeJS, and AWS. Expert in UI/UX and cloud-based web applications."
+      content="Kalpesh Tank is an Angular Team Lead and Frontend Team Lead with 10+ years of experience in Angular, TypeScript, Node.js, MongoDB, AWS, SaaS, and enterprise web applications."
     />
     <meta
       name="keywords"
-      content="Kalpesh Tank, Frontend Developer, Angular Developer, NodeJS, AWS, UI UX, Team Lead, Ahmedabad, Gujarat"
+      content="Angular Team Lead, Frontend Lead, Full Stack Lead, Senior Frontend Developer, Angular Developer, Node.js, MongoDB, React Developer, Next.js Developer, TypeScript Developer, AWS, SaaS, Team Lead, UK Skilled Worker, Germany IT Jobs, USA Frontend Engineer, India Frontend Lead"
     />
     <meta name="author" content="Kalpesh Tank" />
-    <meta
-      property="og:title"
-      content="Kalpesh Tank | Senior Frontend Developer"
-    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://kalpeshtank.github.io/" />
+
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Kalpesh Tank | Frontend Engineering Lead" />
     <meta
       property="og:description"
-      content="8+ years of experience in Angular, NodeJS, and AWS. Frontend Team Lead skilled in UI/UX and team leadership."
+      content="10+ years building scalable SaaS and enterprise applications with Angular, TypeScript, Node.js, MongoDB, React, Next.js, and AWS."
     />
-    <meta
-      property="og:image"
-      content="https://kalpeshtank.github.io/assets/profile.jpeg"
-    />
-    <meta property="og:url" content="https://kalpeshtank.github.io" />
+    <meta property="og:image" content="https://kalpeshtank.github.io/assets/profile.jpeg" />
+    <meta property="og:url" content="https://kalpeshtank.github.io/" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Kalpesh Tank | Frontend Engineering Lead" />
+    <meta
+      name="twitter:description"
+      content="Angular Team Lead and Frontend Team Lead targeting UK, Germany, USA, and India roles."
+    />
+    <meta name="twitter:image" content="https://kalpeshtank.github.io/assets/profile.jpeg" />
 
-    <!-- ✅ Favicon -->
     <link rel="icon" href="assets/profile.jpeg" type="image/jpeg" />
-
-    <!-- ✅ Fonts & Feather Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <script src="https://unpkg.com/feather-icons"></script>
-
-    <!-- ✅ Styles -->
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/feather-icons" defer></script>
+    <script type="module" src="src/app.js"></script>
   </head>
-
   <body class="preload">
-    <!-- ✅ Floating Navigation -->
-    <nav id="floating-nav">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#awards">Awards</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#interests">Interests</a></li>
-      </ul>
+    <div id="scroll-progress"></div>
+
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Kalpesh Tank home">KT</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        <i data-feather="menu"></i>
+      </button>
+      <div id="nav-menu" class="nav-menu">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </div>
+      <div class="nav-controls">
+        <label class="select-field">
+          <span data-i18n="controls.region">Region</span>
+          <select id="region-select" aria-label="Select region">
+            <option value="global">Global</option>
+            <option value="uk">UK</option>
+            <option value="germany">Germany</option>
+            <option value="usa">USA</option>
+            <option value="india">India</option>
+          </select>
+        </label>
+        <label class="select-field">
+          <span data-i18n="controls.language">Language</span>
+          <select id="language-select" aria-label="Select language">
+            <option value="en">English</option>
+            <option value="de">Deutsch</option>
+          </select>
+        </label>
+        <button id="theme-toggle" class="icon-button" type="button" aria-label="Toggle theme">
+          <i data-feather="moon"></i>
+        </button>
+      </div>
     </nav>
 
-    <!-- ✅ Header -->
-    <header class="hero">
-      <button id="theme-toggle" class="theme-toggle" title="Toggle Theme">
-        <i data-feather="moon"></i>
-      </button>
-
-      <div class="hero-content">
-        <img src="assets/profile.jpeg" alt="Kalpesh Tank" class="profile-pic" />
-        <h1>Kalpesh Tank</h1>
-        <p class="subtitle">
-          Senior Frontend Developer | Frontend Team Lead | Angular | NodeJS |
-          AWS
-        </p>
-
-        <div class="links">
-          <a href="mailto:k.p.tank.143@gmail.com" aria-label="Email"
-            ><i data-feather="mail"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/kalpesh-tank-133654125/"
-            target="_blank"
-            aria-label="LinkedIn"
-            ><i data-feather="linkedin"></i
-          ></a>
-          <a
-            href="https://bold.pro/my/kalpesh-tank-240928174537/493r"
-            target="_blank"
-            aria-label="Portfolio"
-            ><i data-feather="globe"></i
-          ></a>
+    <header id="top" class="hero">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" id="region-label">Global profile</p>
+          <h1>Kalpesh Tank</h1>
+          <p class="headline" data-i18n="hero.headline">
+            Angular Team Lead | Full Stack Lead | Angular • Node.js • MongoDB • TypeScript
+          </p>
+          <p class="subheadline" data-i18n="hero.subheadline">
+            10+ years of experience building scalable enterprise web applications, SaaS platforms, and leading frontend teams.
+          </p>
+          <div class="hero-badges" aria-label="Current profile highlights">
+            <span>Current: Angular Team Lead at Procure IT</span>
+            <span>Open to Remote Opportunities</span>
+            <span>UK · Germany · USA · India</span>
+          </div>
+          <div class="hero-actions">
+            <a id="primary-resume" class="button primary" href="assets/resumes/kalpesh-tank-uk-cv.pdf" download>
+              <i data-feather="download"></i>
+              <span>Download Resume</span>
+            </a>
+            <a class="button secondary" href="#projects" data-i18n="hero.viewProjects">View Projects</a>
+            <a class="button ghost" href="#contact" data-i18n="hero.contactMe">Contact Me</a>
+          </div>
+          <div class="social-links" aria-label="Profile links">
+            <a href="mailto:k.p.tank.143@gmail.com" aria-label="Email"><i data-feather="mail"></i></a>
+            <a href="https://www.linkedin.com/in/kalpesh-tank-133654125/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i data-feather="linkedin"></i></a>
+            <a href="https://github.com/kalpeshtank" target="_blank" rel="noreferrer" aria-label="GitHub"><i data-feather="github"></i></a>
+          </div>
         </div>
-
-        <a href="assets/Kalpesh_Tank_Resume.pdf" download class="resume-btn">
-          <i data-feather="download"></i> <span>Download Resume</span>
-        </a>
+        <aside class="hero-card" aria-label="Profile snapshot">
+          <img src="assets/profile.jpeg" alt="Kalpesh Tank" class="profile-pic" />
+          <div>
+            <strong>Angular Team Lead / Frontend Team Lead</strong>
+            <span>Procure IT · Ahmedabad, India · Remote opportunities</span>
+          </div>
+        </aside>
       </div>
     </header>
 
-    <!-- ✅ Scroll Progress Bar -->
-    <div id="scroll-progress"></div>
-
-    <!-- ✅ Main Sections -->
     <main>
-      <section id="about" class="fade-up">
-        <h2>Professional Summary</h2>
-        <p>
-          Senior Frontend Developer with 8+ years of experience in Angular
-          (v3+), and cloud services (AWS,
-          Digital Ocean, GoDaddy). Proven expertise in leading teams, providing
-          training, and managing large-scale frontend development projects.
-          Skilled in REST API integration, performance optimization, and
-          building highly responsive user interfaces.
-        </p>
+      <section class="stats-band" aria-label="Career statistics">
+        <div><strong>10+</strong><span data-i18n="stats.experience">Years Experience</span></div>
+        <div><strong>50+</strong><span data-i18n="stats.projects">Projects Delivered</span></div>
+        <div><strong>6+</strong><span data-i18n="stats.developers">Developers Led</span></div>
+        <div><strong>SaaS</strong><span data-i18n="stats.enterprise">Enterprise Experience</span></div>
       </section>
 
-      <section id="skills" class="fade-up">
-        <h2>Skills</h2>
-        <div class="badges">
-          <span>Angular (v3+)</span>
-          <span>HTML5</span>
-          <span>CSS3</span>
-          <span>JavaScript</span>
-          <span>TypeScript</span>
-          <span>jQuery</span>
-          <span>Node.js (Basic)</span>
-          <span>AWS</span>
-          <span>Google Cloud (Basic)</span>
-          <span>Digital Ocean</span>
-          <span>Git / GitHub</span>
-          <span>CentOS 7</span>
-          <span>GoDaddy</span>
-          <span>EC2</span>
-          <span>Jira</span>
-          <span>Trello</span>
-          <span>Team Leadership</span>
-          <span>Mentoring</span>
-          <span>Communication</span>
+      <section id="about" class="section fade-up">
+        <div class="section-heading">
+          <p data-i18n="sections.profile">Profile</p>
+          <h2 data-i18n="sections.about">Professional Summary</h2>
         </div>
+        <p id="about-summary" class="lead"></p>
       </section>
 
-      <section id="experience" class="fade-up">
-        <h2>Experience</h2>
-
-        <div class="timeline">
-          <div class="job">
-            <h3>Senior Angular Developer — Pingtree</h3>
-            <span>Sep 2023 – Present | Ahmedabad, India</span>
-            <ul>
-              <li>
-                Website development using Angular, Node.js, HTML5, CSS3, and
-                JavaScript.
-              </li>
-              <li>
-                Conducted training and mentoring sessions for team members.
-              </li>
-              <li>
-                Implemented UI/UX enhancements and optimized site performance.
-              </li>
-              <li>
-                Resolved complex frontend and integration issues efficiently.
-              </li>
-              <li>
-                Leading the frontend team with focus on productivity and
-                quality.
-              </li>
-            </ul>
-          </div>
-
-          <div class="job">
-            <h3>
-              Senior Software Engineer — Krish Compusoft Services Pvt. Ltd
-            </h3>
-            <span>Jun 2021 – Sep 2023 | Ahmedabad, India</span>
-            <ul>
-              <li>Developed and deployed Angular-based web applications.</li>
-              <li>Mentored and trained junior developers and freshers.</li>
-              <li>Ensured timely delivery of high-quality projects.</li>
-              <li>
-                Collaborated with backend teams for smooth API integrations.
-              </li>
-            </ul>
-          </div>
-
-          <div class="job">
-            <h3>Senior Software Engineer — Moon Technolabs Pvt. Ltd</h3>
-            <span>Dec 2017 – Jun 2021 | Ahmedabad, India</span>
-            <ul>
-              <li>
-                Developed enterprise web solutions using Angular, Laravel, and
-                CodeIgniter.
-              </li>
-              <li>
-                Built document management systems similar to Google Drive.
-              </li>
-              <li>Led SILQ project serving 2000+ active users.</li>
-              <li>
-                🏆 Received “Employee of the Month” and “Best Newcomer” Awards.
-              </li>
-              <li>Implemented CI/CD and Git version control systems.</li>
-            </ul>
-          </div>
-
-          <div class="job">
-            <h3>Jr. PHP Developer — C S Tech Solutions</h3>
-            <span>Aug 2016 – Dec 2017 | Surat, India</span>
-            <ul>
-              <li>
-                Started IT career with PHP (CodeIgniter), HTML5, CSS3, and
-                JavaScript.
-              </li>
-              <li>
-                Developed web interfaces and interactive UIs using jQuery.
-              </li>
-            </ul>
-          </div>
+      <section id="skills" class="section fade-up">
+        <div class="section-heading">
+          <p data-i18n="sections.capability">Capability</p>
+          <h2 data-i18n="sections.skills">Skills</h2>
         </div>
+        <div id="skills-grid" class="skills-grid"></div>
       </section>
 
-      <section id="education" class="fade-up">
-        <h2>Education</h2>
-        <div class="cards">
-          <div class="card">
-            <h3>MCA — Master of Computer Applications</h3>
+      <section id="experience" class="section fade-up">
+        <div class="section-heading">
+          <p data-i18n="sections.timeline">Timeline</p>
+          <h2 data-i18n="sections.experience">Experience</h2>
+        </div>
+        <div id="experience-list" class="timeline"></div>
+      </section>
+
+      <section id="projects" class="section fade-up">
+        <div class="section-heading">
+          <p data-i18n="sections.work">Work</p>
+          <h2 data-i18n="sections.projects">Featured Projects</h2>
+        </div>
+        <div id="projects-grid" class="project-grid"></div>
+      </section>
+
+      <section id="resumes" class="section fade-up">
+        <div class="section-heading">
+          <p data-i18n="sections.documents">Documents</p>
+          <h2 data-i18n="sections.resumes">Region Resume Downloads</h2>
+        </div>
+        <div id="resume-grid" class="resume-grid"></div>
+      </section>
+
+      <section id="education" class="section fade-up">
+        <div class="section-heading">
+          <p data-i18n="sections.background">Background</p>
+          <h2 data-i18n="sections.education">Education & Recognition</h2>
+        </div>
+        <div class="info-grid">
+          <article>
+            <h3>MCA - Master of Computer Applications</h3>
             <p>Suresh Gyan Vihar University, Rajasthan | March 2020</p>
-          </div>
-          <div class="card">
-            <h3>BCA — Bachelor of Computer Applications</h3>
+          </article>
+          <article>
+            <h3>BCA - Bachelor of Computer Applications</h3>
             <p>Veer Narmad South Gujarat University, Gujarat | March 2016</p>
-          </div>
-          <div class="card">
-            <h3>HSC — Higher Secondary Certificate</h3>
-            <p>I.P Savani Science School, Gujarat | March 2013</p>
-          </div>
-          <div class="card">
-            <h3>SSC — Secondary School Certificate</h3>
+          </article>
+          <article>
+            <h3>Certifications</h3>
+            <p>JavaScript Intermediate, REST API Intermediate - HackerRank</p>
+          </article>
+          <article>
+            <h3>Awards</h3>
+            <p>Employee of the Month - June 2018; Best Newcomer - July 2018; Best Attendance & Performance - July 2018</p>
+          </article>
+          <article>
+            <h3>HSC</h3>
+            <p>I.P. Savani Science School, Gujarat | March 2013</p>
+          </article>
+          <article>
+            <h3>SSC</h3>
             <p>Shree Abhinav Vidhyamandir, Gujarat | March 2011</p>
-          </div>
+          </article>
         </div>
       </section>
 
-      <section id="awards" class="fade-up">
-        <h2>Awards & Achievements</h2>
-        <ul>
-          <li>
-            🏆 Employee of the Month — Moon Technolabs Pvt. Ltd (June 2018)
-          </li>
-          <li>🌟 Best Newcomer Award — Moon Technolabs Pvt. Ltd (July 2018)</li>
-          <li>
-            🎖️ Best Attendance & Performance — Moon Technolabs Pvt. Ltd (July
-            2018)
-          </li>
-        </ul>
-      </section>
-
-      <section id="certifications" class="fade-up">
-        <h2>Certifications</h2>
-        <ul>
-          <li>💻 JavaScript (Intermediate) — HackerRank</li>
-          <li>🔗 REST API (Intermediate) — HackerRank</li>
-        </ul>
-      </section>
-
-      <section id="interests" class="fade-up">
-        <h2>Hobbies & Interests</h2>
-        <p>
-          🌍 Traveling 🏏 Cricket 🎧 Music ⛰️ Mountain Trekking 🍳 Cooking 🎮
-          Gaming
-        </p>
-      </section>
-
-      <section id="disclaimer" class="fade-up">
-        <h2>Disclaimer</h2>
-        <p>
-          I hereby declare that the information furnished above is true to the
-          best of my knowledge.
-        </p>
+      <section id="contact" class="section contact-section fade-up">
+        <div class="section-heading">
+          <p data-i18n="sections.connect">Connect</p>
+          <h2 data-i18n="sections.contact">Contact</h2>
+        </div>
+        <div class="contact-layout">
+          <div class="contact-list">
+            <a href="mailto:k.p.tank.143@gmail.com"><i data-feather="mail"></i> k.p.tank.143@gmail.com</a>
+            <a href="tel:+918905578128"><i data-feather="phone"></i> +91 89055 78128</a>
+            <a href="https://www.linkedin.com/in/kalpesh-tank-133654125/" target="_blank" rel="noreferrer"><i data-feather="linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/kalpeshtank" target="_blank" rel="noreferrer"><i data-feather="github"></i> GitHub</a>
+            <span><i data-feather="map-pin"></i> Ahmedabad, India | International opportunities</span>
+          </div>
+          <form class="contact-form" action="mailto:k.p.tank.143@gmail.com" method="post" enctype="text/plain">
+            <label>
+              <span data-i18n="form.name">Name</span>
+              <input name="name" type="text" autocomplete="name" required />
+            </label>
+            <label>
+              <span data-i18n="form.email">Email</span>
+              <input name="email" type="email" autocomplete="email" required />
+            </label>
+            <label>
+              <span data-i18n="form.message">Message</span>
+              <textarea name="message" rows="4" required></textarea>
+            </label>
+            <button class="button primary" type="submit" data-i18n="form.send">Send Message</button>
+          </form>
+        </div>
       </section>
     </main>
 
-    <footer class="fade-in">
-      <p>© 2025 Kalpesh Tank | Built with ❤️ using GitHub Pages</p>
+    <footer>
+      <p>© <span id="year"></span> Kalpesh Tank | GitHub Pages portfolio</p>
     </footer>
 
-    <!-- ✅ Back to Top -->
-    <button id="back-to-top" aria-label="Back to top">
+    <button id="back-to-top" type="button" aria-label="Back to top">
       <i data-feather="arrow-up"></i>
     </button>
 
-    <!-- ✅ Scripts -->
-    <!-- ✅ Feather Icons -->
-    <script src="https://unpkg.com/feather-icons"></script>
-
-    <!-- ✅ Scripts -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        // === Theme Toggle ===
-        const toggleButton = document.getElementById("theme-toggle");
-        const body = document.body;
-
-        // Initialize icon
-        toggleButton.innerHTML = `<i data-feather="moon"></i>`;
-        feather.replace();
-
-        // Set initial theme
-        if (localStorage.getItem("theme") === "light") {
-          body.classList.add("light");
-          toggleButton.innerHTML = `<i data-feather="sun"></i>`;
-          feather.replace();
-        }
-
-        // Toggle theme on click
-        toggleButton.addEventListener("click", () => {
-          const isLight = body.classList.toggle("light");
-          localStorage.setItem("theme", isLight ? "light" : "dark");
-          toggleButton.innerHTML = isLight
-            ? `<i data-feather="sun"></i>`
-            : `<i data-feather="moon"></i>`;
-          feather.replace();
-        });
-
-        // === Reveal Animations ===
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((e) => {
-              if (e.isIntersecting) e.target.classList.add("visible");
-            });
-          },
-          { threshold: 0.2 }
-        );
-        document
-          .querySelectorAll("section, .card")
-          .forEach((el) => observer.observe(el));
-
-        // === Scroll Progress ===
-        window.addEventListener("scroll", () => {
-          const progress =
-            (window.scrollY /
-              (document.body.scrollHeight - window.innerHeight)) *
-            100;
-          const bar = document.getElementById("scroll-progress");
-          if (bar) bar.style.width = progress + "%";
-        });
-
-        // === Back to Top Button ===
-        const backToTop = document.getElementById("back-to-top");
-        window.addEventListener("scroll", () => {
-          if (window.scrollY > 400) backToTop.classList.add("show");
-          else backToTop.classList.remove("show");
-        });
-        if (backToTop)
-          backToTop.addEventListener("click", () =>
-            window.scrollTo({ top: 0, behavior: "smooth" })
-          );
-
-        // === Floating Nav Active Section Highlight ===
-        const navLinks = document.querySelectorAll("#floating-nav a");
-        const sections = document.querySelectorAll("main section");
-
-        window.addEventListener("scroll", () => {
-          let current = "";
-          sections.forEach((section) => {
-            const sectionTop = section.offsetTop - 150;
-            if (window.scrollY >= sectionTop)
-              current = section.getAttribute("id");
-          });
-
-          navLinks.forEach((link) => {
-            link.classList.remove("active");
-            if (link.getAttribute("href").includes(current))
-              link.classList.add("active");
-          });
-        });
-      });
-    </script>
+    <script id="person-schema" type="application/ld+json"></script>
   </body>
 </html>

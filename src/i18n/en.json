@@ -1,0 +1,53 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "controls": {
+    "region": "Region",
+    "language": "Language"
+  },
+  "hero": {
+    "headline": "Angular Team Lead | Full Stack Lead | Angular • Node.js • MongoDB • TypeScript",
+    "subheadline": "10+ years of experience building scalable enterprise web applications, SaaS platforms, and leading frontend teams.",
+    "viewProjects": "View Projects",
+    "contactMe": "Contact Me"
+  },
+  "stats": {
+    "experience": "Years Experience",
+    "projects": "Projects Delivered",
+    "developers": "Developers Led",
+    "enterprise": "SaaS & Enterprise Experience"
+  },
+  "sections": {
+    "profile": "Profile",
+    "about": "Professional Summary",
+    "capability": "Capability",
+    "skills": "Skills",
+    "timeline": "Timeline",
+    "experience": "Experience",
+    "work": "Work",
+    "projects": "Featured Projects",
+    "documents": "Documents",
+    "resumes": "Region Resume Downloads",
+    "background": "Background",
+    "education": "Education & Recognition",
+    "connect": "Connect",
+    "contact": "Contact"
+  },
+  "form": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message"
+  },
+  "labels": {
+    "role": "Role",
+    "stack": "Tech stack",
+    "impact": "Business impact",
+    "download": "Download"
+  }
+}

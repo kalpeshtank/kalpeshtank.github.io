@@ -1,0 +1,743 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> /F2 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >> >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 5162 >>
+stream
+q
+1.000 1.000 1.000 rg
+0 0 612 792 re f
+Q
+q
+0.063 0.165 0.263 rg
+0 674 612 118 re f
+Q
+q
+0.184 0.498 0.553 rg
+0 674 148 118 re f
+Q
+BT
+1.000 1.000 1.000 rg
+/F2 28 Tf
+1 0 0 1 42 742 Tm (Kalpesh Tank) Tj
+ET
+BT
+0.902 0.965 0.973 rg
+/F2 12.5 Tf
+1 0 0 1 42 716 Tm (Germany CV / Lebenslauf - Angular Team Lead) Tj
+ET
+BT
+0.859 0.918 0.996 rg
+/F1 8.3 Tf
+1 0 0 1 42 694 Tm (Ahmedabad, Indien | +91 89055 78128 | k.p.tank.143@gmail.com | linkedin.com/in/kalpesh-tank-133654125 |) Tj
+ET
+BT
+0.859 0.918 0.996 rg
+/F1 8.3 Tf
+1 0 0 1 42 681 Tm (github.com/kalpeshtank) Tj
+ET
+q
+0.937 0.973 0.976 rg
+316 748 82 18 re f
+Q
+BT
+0.122 0.435 0.486 rg
+/F2 7.3 Tf
+1 0 0 1 324 754 Tm (10+ years) Tj
+ET
+q
+0.937 0.973 0.976 rg
+416 748 82 18 re f
+Q
+BT
+0.122 0.435 0.486 rg
+/F2 7.3 Tf
+1 0 0 1 424 754 Tm (Angular Lead) Tj
+ET
+q
+0.937 0.973 0.976 rg
+516 748 82 18 re f
+Q
+BT
+0.122 0.435 0.486 rg
+/F2 7.3 Tf
+1 0 0 1 524 754 Tm (5-6 devs led) Tj
+ET
+q
+0.184 0.498 0.553 rg
+42 607 5 17 re f
+Q
+BT
+0.059 0.090 0.165 rg
+/F2 10.5 Tf
+1 0 0 1 55 612 Tm (PROFILE) Tj
+ET
+q
+0.843 0.898 0.910 RG
+0.8 w
+202 616 m 570 616 l S
+Q
+BT
+0.149 0.208 0.282 rg
+/F1 10 Tf
+1 0 0 1 42 590 Tm (Strukturierter Lebenslauf fuer deutsche IT-Rollen mit klarer Chronologie, MCA-Ausbildung,) Tj
+ET
+BT
+0.149 0.208 0.282 rg
+/F1 10 Tf
+1 0 0 1 42 577 Tm (  Angular/TypeScript-Expertise, Teamleitung und internationaler Projekterfahrung.) Tj
+ET
+q
+0.184 0.498 0.553 rg
+42 546 5 17 re f
+Q
+BT
+0.059 0.090 0.165 rg
+/F2 10.5 Tf
+1 0 0 1 55 551 Tm (CORE SKILLS) Tj
+ET
+q
+0.843 0.898 0.910 RG
+0.8 w
+202 555 m 570 555 l S
+Q
+q
+0.969 0.984 0.988 rg
+0.839 0.906 0.922 RG
+42 467 250 72 re B
+Q
+BT
+0.122 0.435 0.486 rg
+/F2 9.5 Tf
+1 0 0 1 54 519 Tm (Frontend) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.2 Tf
+1 0 0 1 54 505 Tm (Angular, React, Next.js, TypeScript,) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.2 Tf
+1 0 0 1 54 494 Tm (JavaScript, HTML5, CSS3, jQuery) Tj
+ET
+q
+0.969 0.984 0.988 rg
+0.839 0.906 0.922 RG
+308 467 250 72 re B
+Q
+BT
+0.122 0.435 0.486 rg
+/F2 9.5 Tf
+1 0 0 1 320 519 Tm (Backend) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.2 Tf
+1 0 0 1 320 505 Tm (Node.js, MongoDB, PHP, Laravel,) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.2 Tf
+1 0 0 1 320 494 Tm (CodeIgniter, REST APIs) Tj
+ET
+q
+0.969 0.984 0.988 rg
+0.839 0.906 0.922 RG
+42 393 250 72 re B
+Q
+BT
+0.122 0.435 0.486 rg
+/F2 9.5 Tf
+1 0 0 1 54 445 Tm (Cloud & DevOps) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.2 Tf
+1 0 0 1 54 431 Tm (AWS, EC2, DigitalOcean, GoDaddy, CI/CD,) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.2 Tf
+1 0 0 1 54 420 Tm (Google Cloud Grundlagen, CentOS 7, Server) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.2 Tf
+1 0 0 1 54 409 Tm (Management) Tj
+ET
+q
+0.969 0.984 0.988 rg
+0.839 0.906 0.922 RG
+308 393 250 72 re B
+Q
+BT
+0.122 0.435 0.486 rg
+/F2 9.5 Tf
+1 0 0 1 320 445 Tm (Tools) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.2 Tf
+1 0 0 1 320 431 Tm (Git, GitHub, Jira, Trello, Agile Delivery) Tj
+ET
+q
+0.969 0.984 0.988 rg
+0.839 0.906 0.922 RG
+42 319 250 72 re B
+Q
+BT
+0.122 0.435 0.486 rg
+/F2 9.5 Tf
+1 0 0 1 54 371 Tm (Fuehrung) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.2 Tf
+1 0 0 1 54 357 Tm (Teamleitung, Teams mit 5+ Entwicklern,) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.2 Tf
+1 0 0 1 54 346 Tm (Betreuung eines 6-Entwickler-Teams,) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.2 Tf
+1 0 0 1 54 335 Tm (Mentoring, Code Reviews, technisches) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.2 Tf
+1 0 0 1 54 324 Tm (Training, Delivery Ownership) Tj
+ET
+q
+0.184 0.498 0.553 rg
+42 292 5 17 re f
+Q
+BT
+0.059 0.090 0.165 rg
+/F2 10.5 Tf
+1 0 0 1 55 297 Tm (BERUFSERFAHRUNG) Tj
+ET
+q
+0.843 0.898 0.910 RG
+0.8 w
+202 301 m 570 301 l S
+Q
+BT
+0.090 0.196 0.302 rg
+/F2 11 Tf
+1 0 0 1 42 275 Tm (Angular Team Lead | Procure IT) Tj
+ET
+BT
+0.392 0.455 0.545 rg
+/F1 8.8 Tf
+1 0 0 1 42 261 Tm (Nov 2025 - heute | Ahmedabad, Indien | Remote) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.8 Tf
+1 0 0 1 52 243 Tm (- Leite Angular-Engineering fuer Procure ITs Managed-Intelligence-Plattform mit SaaS-, Cloud-,) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.8 Tf
+1 0 0 1 52 231.7 Tm (  Systemdaten-, Vertrags-, Kosten- und Supplier-Intelligence-Workflows.) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.8 Tf
+1 0 0 1 52 217.39999999999998 Tm (- Erstelle skalierbare Frontend-Module fuer Asset Management, Cloud FinOps, SaaS FinOps, Contract) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.8 Tf
+1 0 0 1 52 206.09999999999997 Tm (  Management, Supplier Analytics und Technology Expense Management.) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.8 Tf
+1 0 0 1 52 191.79999999999995 Tm (- Leite und mentore ein Frontend-Team von 5 Entwicklern und verantworte Architektur,) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.8 Tf
+1 0 0 1 52 180.49999999999994 Tm (  Codequalitaet, TypeScript-Standards, API-Integration und technische Reviews.) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.8 Tf
+1 0 0 1 52 166.19999999999993 Tm (- Verbessere Lieferergebnisse durch wiederverwendbare Angular-Komponenten, stabile Workflows und) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.8 Tf
+1 0 0 1 52 154.89999999999992 Tm (  produktionsreife Releases.) Tj
+ET
+q
+0.886 0.910 0.941 RG
+0.7 w
+42 34 m 570 34 l S
+Q
+BT
+0.392 0.455 0.545 rg
+/F1 7.5 Tf
+1 0 0 1 42 20 Tm (ATS-readable text resume | Designed for recruiter review) Tj
+ET
+BT
+0.392 0.455 0.545 rg
+/F1 7.5 Tf
+1 0 0 1 538 20 Tm (Page 1) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> /F2 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >> >> >> /Contents 6 0 R >>
+endobj
+6 0 obj
+<< /Length 6623 >>
+stream
+q
+1.000 1.000 1.000 rg
+0 0 612 792 re f
+Q
+BT
+0.059 0.090 0.165 rg
+/F2 11 Tf
+1 0 0 1 42 752 Tm (Kalpesh Tank) Tj
+ET
+BT
+0.392 0.455 0.545 rg
+/F1 8.5 Tf
+1 0 0 1 42 736 Tm (Germany CV / Lebenslauf - Angular Team Lead) Tj
+ET
+q
+0.796 0.835 0.882 RG
+0.8 w
+42 724 m 570 724 l S
+Q
+BT
+0.090 0.196 0.302 rg
+/F2 11 Tf
+1 0 0 1 42 704 Tm (Frontend Team Lead | Pingtree) Tj
+ET
+BT
+0.392 0.455 0.545 rg
+/F1 8.8 Tf
+1 0 0 1 42 690 Tm (Okt 2024 - Nov 2025 | Ahmedabad, Indien | Hybrid) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.8 Tf
+1 0 0 1 52 672 Tm (- Fuehrte die Frontend-Lieferung fuer Pingtree-Traffic-Management-Module wie Funnel Builder, Form) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.8 Tf
+1 0 0 1 52 660.7 Tm (  Flows, Source Management, Lead Routing, Analytics und Reporting.) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.8 Tf
+1 0 0 1 52 646.4000000000001 Tm (- Verbesserte Lieferqualitaet durch Code Reviews, wiederverwendbare Angular-UI-Patterns,) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.8 Tf
+1 0 0 1 52 635.1000000000001 Tm (  technisches Training und enge Zusammenarbeit mit Backend-Teams.) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.8 Tf
+1 0 0 1 52 620.8000000000002 Tm (- Leitete und mentorte ein Team von 5 Frontend-Entwicklern, verteilte Aufgaben, pruefte Pull) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.8 Tf
+1 0 0 1 52 609.5000000000002 Tm (  Requests, entfernte Blocker und sicherte Angular-Standards.) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.8 Tf
+1 0 0 1 52 595.2000000000003 Tm (- Verantwortete Fehlerbehebung, UI/UX-Verbesserungen und performanceorientierte Lieferung fuer) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.8 Tf
+1 0 0 1 52 583.9000000000003 Tm (  Kampagnen-, Tracking-, Distribution- und Monetarisierungs-Workflows.) Tj
+ET
+BT
+0.090 0.196 0.302 rg
+/F2 11 Tf
+1 0 0 1 42 564.6000000000004 Tm (Senior Angular Developer | Pingtree) Tj
+ET
+BT
+0.392 0.455 0.545 rg
+/F1 8.8 Tf
+1 0 0 1 42 550.6000000000004 Tm (Sep 2023 - Okt 2024 | Ahmedabad, Indien | Vor Ort) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.8 Tf
+1 0 0 1 52 532.6000000000004 Tm (- Lieferte Angular-Module fuer Pingtrees Lead-Generation- und Traffic-Management-Plattform,) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.8 Tf
+1 0 0 1 52 521.3000000000004 Tm (  darunter Landing-Page-, Tracking-, Source-, Form- und Distribution-Workflows.) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.8 Tf
+1 0 0 1 52 507.0000000000004 Tm (- Erstellte stabile API-Integrationen und unterstuetzte die Behebung produktiver Probleme in) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.8 Tf
+1 0 0 1 52 495.7000000000004 Tm (  Funnel- und Reporting-Modulen.) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.8 Tf
+1 0 0 1 52 481.4000000000004 Tm (- Mentorte Entwickler zu Angular-Qualitaet, Komponentenstruktur und wartbarer Frontend-Lieferung.) Tj
+ET
+BT
+0.090 0.196 0.302 rg
+/F2 11 Tf
+1 0 0 1 42 462.10000000000036 Tm (Senior Software Engineer | Rysun Labs) Tj
+ET
+BT
+0.392 0.455 0.545 rg
+/F1 8.8 Tf
+1 0 0 1 42 448.10000000000036 Tm (Jun 2021 - Sep 2023 | Ahmedabad, Indien) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.8 Tf
+1 0 0 1 52 430.10000000000036 Tm (- Lieferte Angular-basierte Enterprise-Anwendungen in Zusammenarbeit mit Backend-, QA- und) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.8 Tf
+1 0 0 1 52 418.80000000000035 Tm (  Projektmanagement-Teams.) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.8 Tf
+1 0 0 1 52 404.50000000000034 Tm (- Betreute und mentorte ein Team von 6 Entwicklern, darunter Junior-Entwickler und) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.8 Tf
+1 0 0 1 52 393.20000000000033 Tm (  Berufseinsteiger, zu Frontend-Standards, REST-Integration und Lieferprozessen.) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.8 Tf
+1 0 0 1 52 378.9000000000003 Tm (- Unterstuetzte planbare Lieferung durch Aufteilung von Anforderungen in Frontend-Aufgaben,) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.8 Tf
+1 0 0 1 52 367.6000000000003 Tm (  Debugging und Qualitaetspruefung.) Tj
+ET
+BT
+0.090 0.196 0.302 rg
+/F2 11 Tf
+1 0 0 1 42 348.3000000000003 Tm (Senior Software Engineer | Moon Technolabs Pvt. Ltd) Tj
+ET
+BT
+0.392 0.455 0.545 rg
+/F1 8.8 Tf
+1 0 0 1 42 334.3000000000003 Tm (Dez 2017 - Jun 2021 | Ahmedabad, Indien) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.8 Tf
+1 0 0 1 52 316.3000000000003 Tm (- Entwickelte Enterprise-Webloesungen mit Angular, Laravel, CodeIgniter, JavaScript und Cloud-) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.8 Tf
+1 0 0 1 52 305.0000000000003 Tm (  Services.) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.8 Tf
+1 0 0 1 52 290.7000000000003 Tm (- Baute Dokumentenmanagement-Workflows aehnlich Google Drive mit Dateiorganisation und) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.8 Tf
+1 0 0 1 52 279.40000000000026 Tm (  Benutzerzugriffen.) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.8 Tf
+1 0 0 1 52 265.10000000000025 Tm (- Unterstuetzte die SILQ-Projektlieferung fuer 2000+ aktive Nutzer sowie produktive Server- und) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.8 Tf
+1 0 0 1 52 253.80000000000024 Tm (  Softwarethemen.) Tj
+ET
+BT
+0.090 0.196 0.302 rg
+/F2 11 Tf
+1 0 0 1 42 234.50000000000023 Tm (Jr. PHP Developer | C S Tech Solutions) Tj
+ET
+BT
+0.392 0.455 0.545 rg
+/F1 8.8 Tf
+1 0 0 1 42 220.50000000000023 Tm (Aug 2016 - Dez 2017 | Surat, Indien) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.8 Tf
+1 0 0 1 52 202.50000000000023 Tm (- Startete die professionelle Entwicklung mit PHP, CodeIgniter, HTML5, CSS3, JavaScript und) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.8 Tf
+1 0 0 1 52 191.20000000000022 Tm (  jQuery.) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.8 Tf
+1 0 0 1 52 176.9000000000002 Tm (- Erstellte responsive Oberflaechen und unterstuetzte Backend-Integration fuer Kunden-) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.8 Tf
+1 0 0 1 52 165.6000000000002 Tm (  Webanwendungen.) Tj
+ET
+q
+0.184 0.498 0.553 rg
+42 131.30000000000018 5 17 re f
+Q
+BT
+0.059 0.090 0.165 rg
+/F2 10.5 Tf
+1 0 0 1 55 136.30000000000018 Tm (PROJEKTE) Tj
+ET
+q
+0.843 0.898 0.910 RG
+0.8 w
+202 140.30000000000018 m 570 140.30000000000018 l S
+Q
+BT
+0.200 0.255 0.333 rg
+/F1 8.9 Tf
+1 0 0 1 52 114.30000000000018 Tm (- Procure IT Managed-Intelligence-Plattform - SaaS-, Cloud-, Systemdaten-, Vertrags-, Rechnungs-,) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.9 Tf
+1 0 0 1 52 102.70000000000019 Tm (  IT-Asset-, Nutzungs-, Cloud-FinOps-, SaaS-FinOps-, Supplier-Analytics- und Technology-Expense-) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.9 Tf
+1 0 0 1 52 91.1000000000002 Tm (  Management-Workflows.) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.9 Tf
+1 0 0 1 52 76.5000000000002 Tm (- Pingtree Traffic-Management-Plattform - Lead-Generation-Kampagnen, Funnel Builder, Landing Pages,) Tj
+ET
+q
+0.886 0.910 0.941 RG
+0.7 w
+42 34 m 570 34 l S
+Q
+BT
+0.392 0.455 0.545 rg
+/F1 7.5 Tf
+1 0 0 1 42 20 Tm (ATS-readable text resume | Designed for recruiter review) Tj
+ET
+BT
+0.392 0.455 0.545 rg
+/F1 7.5 Tf
+1 0 0 1 538 20 Tm (Page 2) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> /F2 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >> >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 3281 >>
+stream
+q
+1.000 1.000 1.000 rg
+0 0 612 792 re f
+Q
+BT
+0.059 0.090 0.165 rg
+/F2 11 Tf
+1 0 0 1 42 752 Tm (Kalpesh Tank) Tj
+ET
+BT
+0.392 0.455 0.545 rg
+/F1 8.5 Tf
+1 0 0 1 42 736 Tm (Germany CV / Lebenslauf - Angular Team Lead) Tj
+ET
+q
+0.796 0.835 0.882 RG
+0.8 w
+42 724 m 570 724 l S
+Q
+BT
+0.200 0.255 0.333 rg
+/F1 8.9 Tf
+1 0 0 1 52 704 Tm (  Form Flows, Source Tracking, Media Analytics, Split Testing, Lead Routing, Monetarisierung und) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.9 Tf
+1 0 0 1 52 692.4 Tm (  Reporting UI.) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.9 Tf
+1 0 0 1 52 677.8 Tm (- OneBooks GST - SaaS-Accounting/GST-Workflows, Dashboard-Module, rollenbasierte Admin-UI,) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.9 Tf
+1 0 0 1 52 666.1999999999999 Tm (  Angular/TypeScript/REST APIs.) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.9 Tf
+1 0 0 1 52 651.5999999999999 Tm (- Enterprise Angular Applications - wiederverwendbare UI-Komponenten, API-Integrationen,) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.9 Tf
+1 0 0 1 52 639.9999999999999 Tm (  Performance-Verbesserungen und Delivery Mentoring.) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.9 Tf
+1 0 0 1 52 625.3999999999999 Tm (- Document Management System - Drive-aehnliche Datei-Workflows, Zugriffskonzepte, suchfreundliche) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.9 Tf
+1 0 0 1 52 613.7999999999998 Tm (  Struktur, Angular/Laravel/CodeIgniter.) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.9 Tf
+1 0 0 1 52 599.1999999999998 Tm (- SaaS Dashboard / Admin Panel - Analytics, Datentabellen, authentifizierungsbewusste UI und) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.9 Tf
+1 0 0 1 52 587.5999999999998 Tm (  responsive Admin-Prozesse.) Tj
+ET
+q
+0.184 0.498 0.553 rg
+42 557.9999999999998 5 17 re f
+Q
+BT
+0.059 0.090 0.165 rg
+/F2 10.5 Tf
+1 0 0 1 55 562.9999999999998 Tm (AUSBILDUNG) Tj
+ET
+q
+0.843 0.898 0.910 RG
+0.8 w
+202 566.9999999999998 m 570 566.9999999999998 l S
+Q
+BT
+0.200 0.255 0.333 rg
+/F1 8.9 Tf
+1 0 0 1 52 540.9999999999998 Tm (- MCA - Master of Computer Applications, Suresh Gyan Vihar University, Rajasthan, Maerz 2020) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.9 Tf
+1 0 0 1 52 526.3999999999997 Tm (- BCA - Bachelor of Computer Applications, Veer Narmad South Gujarat University, Gujarat, Maerz 2016) Tj
+ET
+q
+0.184 0.498 0.553 rg
+42 496.7999999999997 5 17 re f
+Q
+BT
+0.059 0.090 0.165 rg
+/F2 10.5 Tf
+1 0 0 1 55 501.7999999999997 Tm (ZERTIFIKATE & AUSZEICHNUNGEN) Tj
+ET
+q
+0.843 0.898 0.910 RG
+0.8 w
+202 505.7999999999997 m 570 505.7999999999997 l S
+Q
+BT
+0.200 0.255 0.333 rg
+/F1 8.9 Tf
+1 0 0 1 52 479.7999999999997 Tm (- JavaScript Intermediate - HackerRank) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.9 Tf
+1 0 0 1 52 465.1999999999997 Tm (- REST API Intermediate - HackerRank) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.9 Tf
+1 0 0 1 52 450.5999999999997 Tm (- Employee of the Month - Moon Technolabs, Juni 2018) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.9 Tf
+1 0 0 1 52 435.99999999999966 Tm (- Best Newcomer - Moon Technolabs, Juli 2018) Tj
+ET
+BT
+0.200 0.255 0.333 rg
+/F1 8.9 Tf
+1 0 0 1 52 421.39999999999964 Tm (- Best Attendance and Performance - Moon Technolabs, Juli 2018) Tj
+ET
+q
+0.886 0.910 0.941 RG
+0.7 w
+42 34 m 570 34 l S
+Q
+BT
+0.392 0.455 0.545 rg
+/F1 7.5 Tf
+1 0 0 1 42 20 Tm (ATS-readable text resume | Designed for recruiter review) Tj
+ET
+BT
+0.392 0.455 0.545 rg
+/F1 7.5 Tf
+1 0 0 1 538 20 Tm (Page 3) Tj
+ET
+endstream
+endobj
+xref
+0 9
+0000000000 65535 f
+0000000009 00000 n
+0000000058 00000 n
+0000000127 00000 n
+0000000366 00000 n
+0000005580 00000 n
+0000005819 00000 n
+0000012494 00000 n
+0000012733 00000 n
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+16066
+%%EOF

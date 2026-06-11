@@ -1,0 +1,53 @@
+{
+  "nav": {
+    "about": "Profil",
+    "skills": "Fahigkeiten",
+    "experience": "Erfahrung",
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  },
+  "controls": {
+    "region": "Region",
+    "language": "Sprache"
+  },
+  "hero": {
+    "headline": "Angular Team Lead | Full Stack Lead | Angular • Node.js • MongoDB • TypeScript",
+    "subheadline": "10+ Jahre Erfahrung im Aufbau skalierbarer Enterprise-Webanwendungen, SaaS-Plattformen und Frontend-Teams.",
+    "viewProjects": "Projekte ansehen",
+    "contactMe": "Kontakt"
+  },
+  "stats": {
+    "experience": "Jahre Erfahrung",
+    "projects": "Projekte geliefert",
+    "developers": "Entwickler gefuhrt",
+    "enterprise": "SaaS- und Enterprise-Erfahrung"
+  },
+  "sections": {
+    "profile": "Profil",
+    "about": "Berufliches Profil",
+    "capability": "Kompetenz",
+    "skills": "Fahigkeiten",
+    "timeline": "Werdegang",
+    "experience": "Berufserfahrung",
+    "work": "Arbeit",
+    "projects": "Ausgewahlte Projekte",
+    "documents": "Dokumente",
+    "resumes": "Regionale Lebenslauf-Downloads",
+    "background": "Hintergrund",
+    "education": "Ausbildung & Anerkennung",
+    "connect": "Kontakt",
+    "contact": "Kontakt"
+  },
+  "form": {
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "send": "Nachricht senden"
+  },
+  "labels": {
+    "role": "Rolle",
+    "stack": "Technologien",
+    "impact": "Geschaftlicher Nutzen",
+    "download": "Herunterladen"
+  }
+}
