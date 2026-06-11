@@ -113,10 +113,18 @@
           </div>
         </div>
         <aside class="hero-card" aria-label="Profile snapshot">
-          <img src="assets/profile.jpeg" alt="Kalpesh Tank" class="profile-pic" />
-          <div>
+          <div class="profile-frame">
+            <img src="assets/profile.jpeg" alt="Kalpesh Tank" class="profile-pic" />
+          </div>
+          <div class="profile-summary">
+            <span class="status-pill">Available for senior frontend roles</span>
             <strong>Angular Team Lead / Frontend Team Lead</strong>
-            <span>Procure IT · Ahmedabad, India · Remote opportunities</span>
+            <span>Procure IT · Ahmedabad, India · Remote / international opportunities</span>
+          </div>
+          <div class="hero-proof">
+            <div><strong>10+</strong><span>Years in web engineering</span></div>
+            <div><strong>5+</strong><span>Frontend developers led</span></div>
+            <div><strong>50+</strong><span>Projects delivered</span></div>
           </div>
         </aside>
       </div>
@@ -131,11 +139,21 @@
       </section>
 
       <section id="about" class="section fade-up">
-        <div class="section-heading">
-          <p data-i18n="sections.profile">Profile</p>
-          <h2 data-i18n="sections.about">Professional Summary</h2>
+        <div class="split-section">
+          <div class="section-heading">
+            <p data-i18n="sections.profile">Profile</p>
+            <h2 data-i18n="sections.about">Professional Summary</h2>
+          </div>
+          <div class="summary-panel">
+            <p id="about-summary" class="lead"></p>
+            <div class="focus-list" aria-label="Portfolio focus areas">
+              <span>Angular architecture</span>
+              <span>SaaS dashboards</span>
+              <span>Team leadership</span>
+              <span>Cloud-ready frontend delivery</span>
+            </div>
+          </div>
         </div>
-        <p id="about-summary" class="lead"></p>
       </section>
 
       <section id="skills" class="section fade-up">
@@ -204,11 +222,12 @@
       </section>
 
       <section id="contact" class="section contact-section fade-up">
-        <div class="section-heading">
-          <p data-i18n="sections.connect">Connect</p>
-          <h2 data-i18n="sections.contact">Contact</h2>
-        </div>
         <div class="contact-layout">
+          <div class="section-heading">
+            <p data-i18n="sections.connect">Connect</p>
+            <h2 data-i18n="sections.contact">Contact</h2>
+            <p class="lead">For senior frontend, Angular lead, SaaS platform, and remote opportunities, contact directly through email, phone, LinkedIn, or GitHub.</p>
+          </div>
           <div class="contact-list">
             <a href="mailto:k.p.tank.143@gmail.com"><i data-feather="mail"></i> k.p.tank.143@gmail.com</a>
             <a href="tel:+918905578128"><i data-feather="phone"></i> +91 89055 78128</a>
@@ -216,21 +235,6 @@
             <a href="https://github.com/kalpeshtank" target="_blank" rel="noreferrer"><i data-feather="github"></i> GitHub</a>
             <span><i data-feather="map-pin"></i> Ahmedabad, India | International opportunities</span>
           </div>
-          <form class="contact-form" action="mailto:k.p.tank.143@gmail.com" method="post" enctype="text/plain">
-            <label>
-              <span data-i18n="form.name">Name</span>
-              <input name="name" type="text" autocomplete="name" required />
-            </label>
-            <label>
-              <span data-i18n="form.email">Email</span>
-              <input name="email" type="email" autocomplete="email" required />
-            </label>
-            <label>
-              <span data-i18n="form.message">Message</span>
-              <textarea name="message" rows="4" required></textarea>
-            </label>
-            <button class="button primary" type="submit" data-i18n="form.send">Send Message</button>
-          </form>
         </div>
       </section>
     </main>

@@ -117,8 +117,14 @@ function renderExperience() {
         const bullets = localized.bullets || job.bullets;
         return `
         <article class="job">
-          <h3>${title} - ${job.company}</h3>
-          <span>${job.period} | ${job.location}</span>
+          <div class="job-top">
+            <div>
+              <h3>${title}</h3>
+              <strong>${job.company}</strong>
+            </div>
+            <span>${job.period}</span>
+          </div>
+          <p class="job-location">${job.location}</p>
           <ul>
             ${bullets.map((bullet) => `<li>${bullet}</li>`).join("")}
           </ul>
@@ -133,7 +139,7 @@ function renderProjects() {
   const labels = labelTranslations();
   const container = document.getElementById("projects-grid");
   container.innerHTML = projects
-    .map((project) => {
+    .map((project, index) => {
       const localized = state.language === "de" ? project.de || {} : {};
       const name = localized.name || project.name;
       const role = localized.role || project.role;
@@ -141,12 +147,13 @@ function renderProjects() {
       const impact = localized.impact || project.impact;
       return `
         <article class="project-card">
+          <span class="project-kicker">0${index + 1}</span>
           <h3>${name}</h3>
           <div class="project-meta">
             <span><strong>${labels.stack}:</strong> ${project.stack}</span>
             <span><strong>${labels.role}:</strong> ${role}</span>
-            <span><strong>${labels.impact}:</strong> ${impact}</span>
           </div>
+          <p class="project-impact"><strong>${labels.impact}:</strong> ${impact}</p>
           <ul>
             ${features.map((feature) => `<li>${feature}</li>`).join("")}
           </ul>
