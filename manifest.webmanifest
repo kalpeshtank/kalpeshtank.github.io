@@ -1,0 +1,20 @@
+{
+  "name": "Kalpesh Tank | Portfolio",
+  "short_name": "Kalpesh Tank",
+  "description": "Frontend engineering portfolio for Kalpesh Tank, featuring profile, experience, skills, and resume downloads.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#101112",
+  "theme_color": "#101112",
+  "orientation": "portrait-primary",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "./assets/icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
